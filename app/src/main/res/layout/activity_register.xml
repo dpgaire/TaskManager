@@ -3,39 +3,47 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#ffffff"
     android:orientation="vertical"
-    tools:context=".MainActivity">
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Login"
-        android:textSize="50dp"
-        android:gravity="center"
-        android:textStyle="bold"/>
+    android:layout_height="match_parent"
+    tools:context=".Register">
 
     <ImageView
+        android:id="@+id/imgRegister"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:layout_gravity="center_vertical"
-        android:layout_marginTop="80sp"
-        android:src="@drawable/male"
-
-        />
+        android:src="@drawable/ic_add_a_photo_black_24dp"/>
 
     <EditText
         android:id="@+id/etusername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Username"
+        android:hint="First name"
         android:layout_margin="20sp"
         android:padding="10sp"
         android:inputType="text"
         />
 
 
+    <EditText
+
+        android:id="@+id/lastname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:hint="Last name"
+        android:padding="10sp"
+        android:inputType="text"
+        />
+    <EditText
+
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:hint="Username"
+        android:padding="10sp"
+        android:inputType="text"
+        />
     <EditText
 
         android:id="@+id/etpassword"
@@ -50,7 +58,7 @@
         android:id="@+id/btnlogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Login"
+        android:text="Register"
         android:layout_margin="10sp"
         android:padding="10sp"
         android:textColor="#ffffff"
@@ -58,9 +66,5 @@
         android:textStyle="bold"
 
         />
-
-
-
-
 
 </LinearLayout>
